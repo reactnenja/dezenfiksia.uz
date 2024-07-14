@@ -39,7 +39,6 @@ const SocialMediaButton = () => {
 
     return (
         <div
-            data-aos="zoom-out-up"
             className={
                 isMenuOpen
                     ? `fixed bottom-16 z-50 right-[11px] flex flex-col items-center`

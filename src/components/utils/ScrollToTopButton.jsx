@@ -27,7 +27,7 @@ const ScrollToTopButton = () => {
     }, []);
 
     return (
-        <div data-aos="zoom-out-up" className="fixed bottom-4 z-50 right-4">
+        <div className="fixed bottom-4 z-50 right-4">
             {isVisible && (
                 <button
                     onClick={scrollToTop}
