@@ -77,10 +77,7 @@ const Footer = () => {
     return (
         <footer className="w-full py-8 bg-gray-100">
             <div className="container mx-auto px-4 sm:px-6 lg:px-20">
-                <div
-                    data-aos="zoom-in-right"
-                    className="flex flex-col lg:flex-row justify-between gap-10 bg-white py-8 px-4 lg:px-12 rounded-md shadow-lg"
-                >
+                <div className="flex flex-col lg:flex-row justify-between gap-10 bg-white py-8 px-4 lg:px-12 rounded-md shadow-lg">
                     {/* Logo Section */}
                     <div className="flex justify-center lg:justify-start mb-8 lg:mb-0">
                         <img
@@ -93,10 +90,7 @@ const Footer = () => {
                     {/* Contact Info Section */}
                     <div className="flex flex-col gap-6 lg:w-[60%]">
                         <div className="border-b-2 border-gray-300 pb-4">
-                            <div
-                                data-aos="zoom-out"
-                                className="flex items-center gap-4 mb-4"
-                            >
+                            <div className="flex items-center gap-4 mb-4">
                                 <div className="p-2 border-2 border-gray-300 bg-white shadow-md rounded-md">
                                     <TfiLocationPin className="text-2xl text-gray-800" />
                                 </div>

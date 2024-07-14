@@ -77,16 +77,10 @@ import PeopleImages from "../../../assets/people.png";
 const Contact = () => {
     return (
         <div className="w-full py-12" id="contact">
-            <div
-                data-aos="zoom-in-left"
-                className="container mx-auto px-4 lg:px-20"
-            >
+            <div className="container mx-auto px-4 lg:px-20">
                 <div className="bg-blue-400 flex flex-col lg:flex-row py-8 px-6 lg:py-16 lg:px-10 rounded-md">
                     {/* Form Section */}
-                    <div
-                        data-aos="zoom-in-up"
-                        className="border-white border-2 rounded-md bg-white p-4 w-full lg:w-[456px] h-auto lg:h-[384px] mb-8 lg:mb-0 lg:mr-8"
-                    >
+                    <div className="border-white border-2 rounded-md bg-white p-4 w-full lg:w-[456px] h-auto lg:h-[384px] mb-8 lg:mb-0 lg:mr-8">
                         <form action="">
                             <div className="mb-6 lg:mb-10">
                                 <h3 className="font-bold font-sans capitalize text-2xl lg:text-3xl text-black">
@@ -129,10 +123,7 @@ const Contact = () => {
                         </form>
                     </div>
 
-                    <div
-                        data-aos="zoom-in-down"
-                        className=" lg:w-full flex flex-col lg:flex-row lg:justify-end items-center lg:items-start"
-                    >
+                    <div className=" lg:w-full flex flex-col lg:flex-row lg:justify-end items-center lg:items-start">
                         <div className="text-center lg:text-right mb-6 lg:mb-0 lg:mr-6">
                             <h3 className="text-white text-lg lg:text-xl font-bold">
                                 Bizga ko'p yillardan beri kompaniyamizga ishonch

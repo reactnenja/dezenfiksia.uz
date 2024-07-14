@@ -130,7 +130,7 @@ import React, { useState } from "react";
 
 const AccordionItem = ({ title, content, isOpen, onClick, itemStyles }) => {
     return (
-        <div data-aos="zoom-in" className="border-b border-gray-300">
+        <div className="border-b border-gray-300">
             <button
                 className="w-full flex justify-between items-center p-4 lg:p-6 outline-none"
                 style={{
