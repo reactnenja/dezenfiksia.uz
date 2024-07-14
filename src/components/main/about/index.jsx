@@ -106,13 +106,17 @@ const About = () => {
     return (
         <div className="py-8" id="about">
             <div className="container mx-auto px-4 sm:px-6 lg:px-20">
-                <h1 className="pt-8 text-3xl font-bold mb-6 sm:text-4xl lg:text-5xl lg:text-left text-center">
+                <h1
+                    className="pt-8 text-3xl font-bold mb-6 sm:text-4xl lg:text-5xl lg:text-left text-center"
+                    data-aos="fade-right"
+                >
                     Avfzalliklarimiz
                 </h1>
                 <hr className="bg-slate-400 mb-6 border-2" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
                     {dataCard.map((item, index) => (
                         <div
+                            data-aos="fade-left"
                             key={index}
                             className="hover:bg-white hover:scale-105 p-4 hover:border border border-gray-300 rounded-md transition-all duration-300 cursor-pointer"
                         >
@@ -131,6 +135,7 @@ const About = () => {
                     ))}
                 </div>
                 <div
+                    data-aos="fade-up-left"
                     style={{
                         backgroundImage: `url(${BgAbout})`,
                         backgroundSize: "cover",
@@ -138,7 +143,10 @@ const About = () => {
                     }}
                     className="w-full h-[500px] bg-cover flex flex-col lg:flex-row justify-center lg:justify-end items-center text-center lg:text-right p-8 lg:p-12"
                 >
-                    <div className="bg-opacity-70 bg-black text-white p-6 rounded-lg max-w-md lg:max-w-lg">
+                    <div
+                        data-aos="fade-down-right"
+                        className="bg-opacity-70 bg-black text-white p-6 rounded-lg max-w-md lg:max-w-lg"
+                    >
                         <h3 className="text-2xl lg:text-3xl font-bold mb-4">
                             Klapa va zararli hashorot endi yo’q deb hisoblang
                             !!!

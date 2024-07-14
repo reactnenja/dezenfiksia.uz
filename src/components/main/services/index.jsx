@@ -105,7 +105,10 @@ const Services = () => {
     return (
         <section className="pb-[50px] border-b-2 border-slate-500" id="service">
             <div className="container mx-auto px-4 sm:px-6 lg:px-20">
-                <div className="mb-10 pt-[90px] text-center lg:text-left">
+                <div
+                    className="mb-10 pt-[90px] text-center lg:text-left"
+                    data-aos="fade-down-left"
+                >
                     <h2 className="text-black mb-2 font-bold text-3xl sm:text-4xl w-full">
                         Service
                     </h2>
@@ -116,7 +119,10 @@ const Services = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mb-10">
-                    <div className="border shadow-md border-[#F3F6F6] bg-[#F3F6F6] px-4 py-6 rounded-md w-full h-auto lg:h-[420px] flex flex-col justify-between">
+                    <div
+                        className="border shadow-md border-[#F3F6F6] bg-[#F3F6F6] px-4 py-6 rounded-md w-full h-auto lg:h-[420px] flex flex-col justify-between"
+                        data-aos="flip-right"
+                    >
                         <div>
                             <h2 className="mb-10 text-3xl sm:text-4xl text-black font-bold">
                                 Boshlang’ich tushunchalar
@@ -134,7 +140,10 @@ const Services = () => {
                             <img src={LogoOne} alt="card logo" />
                         </div>
                     </div>
-                    <div className="border shadow-md border-[#F3F6F6] bg-[#F3F6F6] px-4 py-6 rounded-md w-full h-auto lg:h-[420px] flex flex-col justify-between">
+                    <div
+                        data-aos="flip-right"
+                        className="border shadow-md border-[#F3F6F6] bg-[#F3F6F6] px-4 py-6 rounded-md w-full h-auto lg:h-[420px] flex flex-col justify-between"
+                    >
                         <div>
                             <h2 className="mb-10 text-3xl sm:text-4xl text-black font-bold">
                                 O’rta
@@ -152,7 +161,10 @@ const Services = () => {
                             <img src={LogoTwo} alt="card logo" />
                         </div>
                     </div>
-                    <div className="border shadow-md border-[#F3F6F6] bg-[#F3F6F6] px-4 py-6 rounded-md w-full h-auto lg:h-[420px] flex flex-col justify-between">
+                    <div
+                        data-aos="flip-right"
+                        className="border shadow-md border-[#F3F6F6] bg-[#F3F6F6] px-4 py-6 rounded-md w-full h-auto lg:h-[420px] flex flex-col justify-between"
+                    >
                         <div>
                             <h2 className="mb-10 text-3xl sm:text-4xl text-black font-bold">
                                 Yuqori
@@ -173,11 +185,14 @@ const Services = () => {
                 </div>
 
                 <div className="p-4 bg-blue-400 rounded-md grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    <div className="flex justify-center lg:justify-start">
+                    <div
+                        data-aos="flip-up"
+                        className="flex justify-center lg:justify-start"
+                    >
                         <img src={LogoFifte} alt="logo" />
                     </div>
 
-                    <div className="mt-5">
+                    <div className="mt-5" data-aos="flip-down">
                         <div className="mb-5">
                             <img src={ServIcons} alt="services sections icon" />
                         </div>

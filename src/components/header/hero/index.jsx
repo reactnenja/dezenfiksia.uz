@@ -79,7 +79,10 @@ const Hero = () => {
         <section className="py-[72px] lg:py-[152px] w-full h-auto">
             <div className="container mx-auto px-4 sm:px-6 lg:px-20">
                 <div className="flex flex-col-reverse lg:flex-row justify-between items-center ">
-                    <div className="text-center lg:text-left lg:w-1/2">
+                    <div
+                        className="text-center lg:text-left lg:w-1/2"
+                        data-aos="fade-up"
+                    >
                         <h1 className="text-3xl sm:text-4xl lg:text-6xl text-[#3375FF] mb-8 leading-tight lg:leading-[72px] font-bold">
                             Dizenfeksiya <br /> xizmati
                         </h1>
@@ -119,7 +122,7 @@ const Hero = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="mb-8 lg:mb-0">
+                    <div className="mb-8 lg:mb-0" data-aos="fade-down">
                         <img
                             src={HeroImage}
                             className="w-full lg:w-[550px] h-auto lg:h-[540px]"
