@@ -6,17 +6,17 @@ import Contact from "./contact";
 import Faq from "./faq";
 import Services from "./services";
 
-const Main = () => {
+const MainKomponent = () => {
     return (
-        <main>
+        <div>
             <SocialMediaButton />
             <ScrollToTopButton />
             <About />
             <Services />
             <Faq />
             <Contact />
-        </main>
+        </div>
     );
 };
 
-export default Main;
+export default MainKomponent;

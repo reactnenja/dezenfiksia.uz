@@ -68,6 +68,7 @@
 
 // export default Hero;
 import React from "react";
+import { useTranslation } from "react-i18next";
 import ArrowTop from "../../../assets/arrow-top.svg";
 import BackOne from "../../../assets/bg-1.png";
 import BackTwo from "../../../assets/bg-2.png";
@@ -75,19 +76,20 @@ import BackThree from "../../../assets/bg-3.png";
 import HeroImage from "../../../assets/hero-img.png";
 
 const Hero = () => {
+    const { t } = useTranslation();
     return (
         <section className="py-[72px] lg:py-[152px] w-full h-auto">
             <div className="container mx-auto px-4 sm:px-6 lg:px-20">
                 <div className="flex flex-col-reverse lg:flex-row justify-between items-center ">
                     <div className="text-center lg:text-left lg:w-1/2">
                         <h1 className="text-3xl sm:text-4xl lg:text-6xl text-[#3375FF] mb-8 leading-tight lg:leading-[72px] font-bold">
-                            Dizenfeksiya <br /> xizmati
+                            {t("dizenfeksiya")} <br /> {t("xizmati")}
                         </h1>
                         <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:w-[680px] h-auto lg:h-[300px]">
                             <p className="text-[#676D83] w-full lg:w-[650px] mb-8 lg:mb-0 leading-[30px]">
-                                Bizning ko’p yillardan beri o’z faoliyatini olib
-                                kelayotgan kompaniyamiz Mijozlarimiz bizdan
-                                mamnun
+                                {t(
+                                    "Bizning kop yillardan beri oz faoliyatini olib kelayotgan kompaniyamiz Mijozlarimiz bizdan  mamnun"
+                                )}
                             </p>
                             <div className="relative w-full lg:w-[400px] mt-8 lg:mt-0 max-lg:mb-20">
                                 <img
@@ -109,7 +111,7 @@ const Hero = () => {
                         </div>
                         <div className="flex flex-col sm:flex-row gap-6 mt-8">
                             <button className="border-2 max-lg:p-4  max-lg:hover:scale-105 max-lg:duration-500 border-[#3375FF] p-2 rounded-full w-full sm:w-[200px] bg-[#3375FF] text-white">
-                                Bog’lanish
+                                {t("Bog’lanish")}
                             </button>
                             <a
                                 href="#"

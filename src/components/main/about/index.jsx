@@ -78,12 +78,14 @@
 
 // export default About;
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import BgAbout from "../../../assets/bg-about.png";
 import CardImageOne from "../../../assets/card-1.svg";
 import CardImageTwo from "../../../assets/card-2.svg";
 import CardImageThree from "../../../assets/card-3.svg";
 
 const About = () => {
+    const { t } = useTranslation();
     // Define the initial state using useState hook
     const [dataCard, setDataCard] = useState([
         {
@@ -107,7 +109,7 @@ const About = () => {
         <div className="py-8" id="about">
             <div className="container mx-auto px-4 sm:px-6 lg:px-20">
                 <h1 className="pt-8 text-3xl font-bold mb-6 sm:text-4xl lg:text-5xl lg:text-left text-center">
-                    Avfzalliklarimiz
+                    {t("Avfzalliklarimiz")}
                 </h1>
                 <hr className="bg-slate-400 mb-6 border-2" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">

@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../../assets/logo.svg";
 
-const Navbar = () => {
+const Navbar = ({ changeLanguage }) => {
+    const { t } = useTranslation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const languages = localStorage.getItem("i18nextLng");
 
     const handleScroll = () => {
         if (window.scrollY > 50) {
@@ -35,7 +38,7 @@ const Navbar = () => {
                         <img
                             src={Logo}
                             alt="Logo web-site"
-                            className="w-32 max-lg:w-48"
+                            className="max-lg:w-40"
                         />
                     </a>
                     <div className="hidden lg:flex items-center gap-9">
@@ -45,7 +48,7 @@ const Navbar = () => {
                                     href="#service"
                                     className="hover:text-white transition-all duration-300 hover:bg-[#3375FF] p-2 rounded-md font-light hover:backdrop-blur-sm"
                                 >
-                                    Service
+                                    {t("Service")}
                                 </a>
                             </li>
                             <li>
@@ -53,7 +56,7 @@ const Navbar = () => {
                                     href="#about"
                                     className="hover:text-white transition-all duration-300 hover:bg-[#3375FF] p-2 rounded-md font-light hover:backdrop-blur-sm"
                                 >
-                                    About
+                                    {t("About")}
                                 </a>
                             </li>
                             <li>
@@ -61,7 +64,7 @@ const Navbar = () => {
                                     href="#faq"
                                     className="hover:text-white transition-all duration-300 hover:bg-[#3375FF] p-2 rounded-md font-light hover:backdrop-blur-sm"
                                 >
-                                    Faq
+                                    {t("Faq")}
                                 </a>
                             </li>
                             <li>
@@ -69,12 +72,23 @@ const Navbar = () => {
                                     href="#contact"
                                     className="hover:text-white transition-all duration-300 hover:bg-[#3375FF] p-2 rounded-md font-light hover:backdrop-blur-sm"
                                 >
-                                    Contact
+                                    {t("Contact")}
                                 </a>
                             </li>
                         </ul>
+                        <select
+                            name="ln"
+                            id="ln"
+                            onChange={(e) => changeLanguage(e.target.value)}
+                            value={languages}
+                            className="hidden lg:block border rounded px-2 py-1"
+                        >
+                            <option value="uz">Uzbek</option>
+                            <option value="en">English</option>
+                            <option value="ru">Russian</option>
+                        </select>
                         <button className="bg-[#3375FF] rounded-full p-2 w-48 text-white hover:scale-125 transition-all duration-300 hover:bg-transparent hover:text-[#3375FF] border border-[#3375FF]">
-                            Kirish
+                            {t("Kirish")}
                         </button>
                     </div>
                     <div className="lg:hidden">
@@ -95,7 +109,7 @@ const Navbar = () => {
                                     className="block py-4 text-center hover:text-white transition-all duration-300 hover:bg-[#3375FF] p-2 rounded-md font-light hover:backdrop-blur-sm"
                                     onClick={() => setMenuOpen(false)}
                                 >
-                                    Service
+                                    {t("Service")}
                                 </a>
                             </li>
                             <li className="w-full p-1">
@@ -104,7 +118,7 @@ const Navbar = () => {
                                     className="block py-4 text-center hover:text-white transition-all duration-300 hover:bg-[#3375FF] p-2 rounded-md font-light hover:backdrop-blur-sm"
                                     onClick={() => setMenuOpen(false)}
                                 >
-                                    About
+                                    {t("About")}
                                 </a>
                             </li>
                             <li className="w-full p-1">
@@ -113,7 +127,7 @@ const Navbar = () => {
                                     className="block py-4 text-center hover:text-white transition-all duration-300 hover:bg-[#3375FF] p-2 rounded-md font-light hover:backdrop-blur-sm"
                                     onClick={() => setMenuOpen(false)}
                                 >
-                                    Faq
+                                    {t("Faq")}
                                 </a>
                             </li>
                             <li className="w-full p-1">
@@ -122,11 +136,11 @@ const Navbar = () => {
                                     className="block py-4 text-center hover:text-white transition-all duration-300 hover:bg-[#3375FF] p-2 rounded-md font-light w-full hover:backdrop-blur-sm"
                                     onClick={() => setMenuOpen(false)}
                                 >
-                                    Contact
+                                    {t("Contact")}
                                 </a>
                             </li>
                             <button className="bg-[#3375FF] rounded-full p-4 w-full text-white hover:scale-125 transition-all duration-300 hover:bg-transparent hover:text-[#3375FF] border border-[#3375FF]">
-                                Kirish
+                                {t("Kirish")}
                             </button>
                         </ul>
                     </div>
