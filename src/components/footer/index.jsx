@@ -68,12 +68,14 @@
 
 // export default Footer;
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import { TfiLocationPin } from "react-icons/tfi";
 import Logo from "../../assets/logo.svg";
 
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <footer className="w-full py-8 bg-gray-100">
             <div className="container mx-auto px-4 sm:px-6 lg:px-20">
@@ -95,8 +97,9 @@ const Footer = () => {
                                     <TfiLocationPin className="text-2xl text-gray-800" />
                                 </div>
                                 <p className="text-gray-800 font-medium flex gap-2 items-center">
-                                    Toshkent shahri Yashnabod tumani Mo’ljal
-                                    Sergeli-4 bekat
+                                    {t(
+                                        "Toshkent shahri Yashnabod tumani Moljal Sergeli-4 bekat"
+                                    )}
                                     <MdArrowOutward className="text-xl text-blue-500" />
                                 </p>
                             </div>
@@ -120,7 +123,7 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <b>Facebook</b>
+                                <b>{t("Facebook")}</b>
                                 <MdArrowOutward />
                             </a>
                             <a
@@ -130,7 +133,7 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <b>Instagram</b>
+                                <b>{t("Instagram")}</b>
                                 <MdArrowOutward />
                             </a>
                             <a
@@ -140,7 +143,7 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <b>Telegram</b>
+                                <b>{t("Telegram")}</b>
                                 <MdArrowOutward />
                             </a>
                         </div>

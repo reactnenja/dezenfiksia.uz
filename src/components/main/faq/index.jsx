@@ -1,27 +1,3 @@
-// import React from "react";
-// import Accordion from "../../utils/Accordion";
-
-// const Faq = () => {
-//     return (
-//         <div className="py-[80px] w-full" id="faq">
-//             <div className="container mx-auto px-20 ">
-//                 <div className=" border-t-2 flex pt-7  justify-between">
-//                     <div className="w-[15%]">
-//                         <h1 className="text-[40px] leading-14 text-[#020C31] font-bold px-6">
-//                             FAQ
-//                         </h1>
-//                     </div>
-
-//                     <div className="w-[85%] ">
-//                         <Accordion />
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Faq;
 import React from "react";
 import Accordion from "../../utils/Accordion";
 
