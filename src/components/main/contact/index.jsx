@@ -56,7 +56,7 @@ const Contact = () => {
                         <div className="text-center lg:text-right mb-6 lg:mb-0 lg:mr-6">
                             <h3 className="text-white text-lg lg:text-xl font-bold">
                                 {t(
-                                    "Bizga ko'p yillardan beri kompaniyamizga ishonch bildirganlar talaygina"
+                                    "Bizga kop yillardan beri kompaniyamizga ishonch bildirganlar talaygina"
                                 )}
                             </h3>
                         </div>

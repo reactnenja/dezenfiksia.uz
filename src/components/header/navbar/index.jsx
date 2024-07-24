@@ -81,7 +81,7 @@ const Navbar = ({ changeLanguage }) => {
                             id="ln"
                             onChange={(e) => changeLanguage(e.target.value)}
                             value={languages}
-                            className="hidden lg:block border rounded px-2 py-1"
+                            className="sm:block border rounded px-2 py-1 bg-white"
                         >
                             <option value="uz">Uzbek</option>
                             <option value="en">English</option>
@@ -91,7 +91,18 @@ const Navbar = ({ changeLanguage }) => {
                             {t("Kirish")}
                         </button>
                     </div>
-                    <div className="lg:hidden">
+                    <div className="lg:hidden flex items-center">
+                        <select
+                            name="ln"
+                            id="ln"
+                            onChange={(e) => changeLanguage(e.target.value)}
+                            value={languages}
+                            className="border rounded px-2 py-1 mr-2 bg-white"
+                        >
+                            <option value="uz">Uzbek</option>
+                            <option value="en">English</option>
+                            <option value="ru">Russian</option>
+                        </select>
                         <button
                             onClick={() => setMenuOpen(!menuOpen)}
                             className="text-2xl focus:outline-none"

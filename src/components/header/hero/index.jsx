@@ -86,30 +86,30 @@ const Hero = () => {
                             {t("dizenfeksiya")} <br /> {t("xizmati")}
                         </h1>
                         <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:w-[680px] h-auto lg:h-[300px]">
-                            <p className="text-[#676D83] w-full lg:w-[650px] mb-8 lg:mb-0 leading-[30px]">
+                            <p className="text-[#676D83] w-full lg:w-[650px] mb-2 lg:mb-0 leading-[30px]">
                                 {t(
                                     "Bizning kop yillardan beri oz faoliyatini olib kelayotgan kompaniyamiz Mijozlarimiz bizdan  mamnun"
                                 )}
                             </p>
-                            <div className="relative w-full lg:w-[400px] mt-8 lg:mt-0 max-lg:mb-20">
+                            <div className="relative w-full lg:w-[400px] py-4 mt-8 lg:mt-0 max-lg:mb-20">
                                 <img
                                     src={BackOne}
-                                    className="absolute top-[-50px] left-0"
+                                    className="absolute top-[-50px] max-lg:right-2 left-0"
                                     alt="web site of images"
                                 />
                                 <img
                                     src={BackTwo}
-                                    className="absolute top-[-30px] left-[15px] w-[100px] h-[100px] sm:w-[150px] sm:h-[150px]"
+                                    className="absolute top-[-30px] max-lg:right-2 left-[15px] w-[100px] h-[100px] sm:w-[150px] sm:h-[150px]"
                                     alt="web site of images"
                                 />
                                 <img
                                     src={BackThree}
-                                    className="absolute top-[-56px] left-[60px] w-[150px] h-[150px] sm:w-[240px] sm:h-[240px]"
+                                    className="absolute top-[-56px] max-lg:right-2 left-[60px] w-[150px] h-[150px] sm:w-[240px] sm:h-[240px]"
                                     alt="web site of images"
                                 />
                             </div>
                         </div>
-                        <div className="flex flex-col sm:flex-row gap-6 mt-8">
+                        <div className="flex flex-col sm:flex-row gap-6">
                             <button className="border-2 max-lg:p-4  max-lg:hover:scale-105 max-lg:duration-500 border-[#3375FF] p-2 rounded-full w-full sm:w-[200px] bg-[#3375FF] text-white">
                                 {t("Bog’lanish")}
                             </button>
