@@ -150,9 +150,12 @@ const Navbar = ({ changeLanguage }) => {
                                     {t("Contact")}
                                 </a>
                             </li>
-                            <button className="bg-[#3375FF] rounded-full p-4 w-full text-white hover:scale-125 transition-all duration-300 hover:bg-transparent hover:text-[#3375FF] border border-[#3375FF]">
+                            <a
+                                href="#contact"
+                                className="bg-[#3375FF] inline-block rounded-full p-4 w-full text-white hover:scale-125 transition-all duration-300 hover:bg-transparent hover:text-[#3375FF] border border-[#3375FF]"
+                            >
                                 {t("Kirish")}
-                            </button>
+                            </a>
                         </ul>
                     </div>
                 )}
